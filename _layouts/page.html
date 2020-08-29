@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="banner" align="center">
+      <object type="image/svg+xml" data="/images/static/header.svg" width="100%"></object>
+</div>  
+
+<div id="blog" class="container blog-classic">
+  <div class="row">
+    <!-- Blog Post -->
+    <div class="col-md-8 center-block blog-post-single wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
+    <a href="/..{{ site.baseurl }}/"><< Back</a>
+       
+    <!-- Title -->
+    <center><big><h1 class="post-title">{{ page.title }}</h1 ></big></center><br/>
+
+	<table align="center">
+	  <tr>
+	  <td><a href="https://github.com/dbfowler" target="_blank"><i class="fa fa-github"></i>&nbsp&nbspGitHub</a></td>
+	  <td><a href="https://linkedin.com/in/brady-fowler" target="_blank"><i class="fa fa-linkedin"></i>&nbsp&nbspLinkedIn</a></td>
+	  </tr>
+	  </table>
+
+
+    <br />
+    <article class="post-content"> <!--NEED TO KEEP THIS FOR MARKDOWN TO GET PARSED -->
+      {{ content }}
+    </article> <!--NEED TO KEEP THIS FOR MARKDOWN TO GET PARSED -->
+          
+    </div><!-- / .blog-post-single -->
+
+    </div><!-- / .row -->
+  </div><!-- / .container -->
+</div>

@@ -1,0 +1,12 @@
+# Site settings
+title: Decibels & Decimals
+email: fowler.brady@gmail.com
+description: Music & Data
+baseurl: ""
+permalink: /dbdblog/:year/:i_month/:i_day/:title.html
+url: "https://www.decibelsanddecimals.com" # the base hostname & protocol for your site
+github_username:  dbfowler
+github: blog
+# Build settings
+markdown: kramdown
+comments: true

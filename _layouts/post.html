@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="banner" align="center">
+      <object type="image/svg+xml" data="/../images/static/header.svg" width="100%"></object>
+</div>  
+
+<div id="blog" class="container">
+  <div class="row">
+    <!-- Blog Post -->
+    <div class="col-md-8 center-block blog-post-single wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
+    <a href="/..{{ site.baseurl }}/"><< Back</a>
+        
+    <!-- Title -->
+    <center><big><h1 class="post-title">{{ page.title }}</h1 ></big></center><br/>
+
+    <!-- Meta data -->
+    <div class="post-meta" align="center">
+      <a href="{{ site.linkedin }}" class="post-date">
+          {{ page.author }}&nbsp;
+          <span> {{ page.date | date: "%b %-d, %Y" }}</span>
+      </a>
+    </div><br/><!-- / .meta -->
+
+    <!-- Image -->
+    <a href="{{ page.url | prepend: site.baseurl }}"><img class="img-responsive post-img" src="/../{{ page.image }}" alt="{{ page.title }}" style="border-radius: 5px; border-width: 2px;"></a>
+
+    <!-- Details -->
+    <br />
+    <center><h5 class="post-description">{{ page.summary }}</h5></center>
+    <br />
+
+    <div class="share-page" align="center">
+      Check out the code &rarr;
+      <a href="{{ page.github }}" target="_blank"><i class="fa fa-github"></i>&nbspGitHub</a>
+    </div>
+
+    <br />
+    <article class="post-content"> <!--NEED TO KEEP THIS FOR MARKDOWN TO GET PARSED -->
+      {{ content }}
+    </article> <!--NEED TO KEEP THIS FOR MARKDOWN TO GET PARSED -->
+          
+    </div><!-- / .blog-post-single -->
+
+    </div><!-- / .row -->
+  </div><!-- / .container -->
+</div>
